@@ -1,0 +1,72 @@
+.homelink {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+.grid_1-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.card1 {
+  gap: 1rem;
+  background-color: bisque;
+  padding: 20px 40px 20px 40px;
+  margin: 1.5rem;
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+
+.produktlist {
+  text-decoration: none;
+}
+.galleri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.galleri img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: auto;
+}
+
+@media screen and (min-width: 1300px) {
+  .grid_1-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card1 {
+    gap: 1rem;
+    background-color: bisque;
+    padding: 20px 40px 20px 40px;
+    margin: 1.5rem;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+  }
+
+  .galleri {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .galleri img {
+    max-height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+  }
+}
