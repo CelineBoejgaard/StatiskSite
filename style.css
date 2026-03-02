@@ -79,7 +79,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #b5a8aa;
+  background-color: #a8acb5;
   top: 0;
 }
 .menu a {
@@ -104,6 +104,10 @@ button {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 2;
+}
+
+.centeritems {
+  margin: 6rem;
 }
 
 @media screen and (min-width: 1100px) {
